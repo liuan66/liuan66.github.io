@@ -3,67 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> chen- 电子信息工程应届生简历</title>
+  <title>优选福利站 | 好物与工具合集</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="profile">
-          <h1>chen</h1>
-          <p>武汉纺织大学 - 电子信息工程 | 2026届毕业</p>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="tag">精选入口 · 每周更新</p>
+        <h1>优选福利站</h1>
+        <p class="subtitle">电商好价、效率工具、学习平台一站直达。点击后前往官方页面完成购买或注册。</p>
+        <div class="hero-actions">
+          <a class="cta" href="#links">马上领取福利</a>
+          <button id="themeToggle" class="theme-toggle" type="button">切换深色</button>
         </div>
-        <button id="themeToggle" class="theme-toggle">切换深色模式</button>
+      </div>
+      <div class="hero-stats" aria-label="站点数据">
+        <div class="stat-card">
+          <span id="totalLinks">0</span>
+          <small>收录链接</small>
+        </div>
+        <div class="stat-card">
+          <span id="totalClicks">0</span>
+          <small>本地点击</small>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="main">
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>技能</h2>
-        <div class="skills-grid">
-          <div class="skill-card">Verilog</div>
-          <div class="skill-card">FPGA</div>
-          <div class="skill-card">Vivado</div>
-          <div class="skill-card">C/C++</div>
-          <div class="skill-card">Qt</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">HTML/CSS/JS</div>
-          <div class="skill-card">Git</div>
-          <div class="skill-card">GitHub Pages</div>
-          <div class="skill-card">本地大模型部署</div>
-        </div>
-      </div>
+  <section class="notice-wrap">
+    <div class="container">
+      <p class="notice">
+        说明：本页包含推广链接。你通过本页跳转后在目标平台购买或注册，我可能获得佣金；这通常不会增加你的实际支付价格。
+      </p>
+    </div>
+  </section>
+
+  <main class="main container">
+    <section class="controls" aria-label="链接筛选">
+      <h2>按分类查看</h2>
+      <div id="filters" class="filters"></div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>项目经验</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>基于Verilog的LDPC编码器FPGA实现</h3>
-            <p>使用Verilog语言设计并实现了LDPC编码器，在FPGA上进行硬件验证，提高了编码效率。</p>
-          </div>
-          <div class="project-card">
-            <h3>个人技术主页开发与GitHub Pages部署</h3>
-            <p>使用HTML、CSS、JS开发个人技术主页，并部署到GitHub Pages，实现快速上线。</p>
-          </div>
-          <div class="project-card">
-            <h3>基于RTX3060的本地大模型部署实践</h3>
-            <p>在RTX3060显卡上部署本地大模型，进行推理优化，提升模型运行效率。</p>
-          </div>
-        </div>
-      </div>
+    <section id="links" class="links-grid" aria-label="推广链接合集"></section>
+
+    <section class="guide">
+      <h2>站长操作指南</h2>
+      <ol>
+        <li>在 script.js 里修改链接地址、标题、简介和分类。</li>
+        <li>把链接换成你的推广链接，保留 https:// 开头。</li>
+        <li>发布到 GitHub Pages 后，把主页链接发到社媒或群里引流。</li>
+      </ol>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 chen. 联系方式: [1064915975@qq.com/p>
-    </div>
+      <p>© 2026 优选福利站 · 持续更新中</p>
+      <p>提示：请遵守各平台推广政策，做好必要披露。</p>
+      </div>
   </footer>
+
+  <template id="linkCardTemplate">
+    <article class="link-card">
+      <p class="link-category"></p>
+      <h3 class="link-title"></h3>
+      <p class="link-desc"></p>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer">前往官方页面</a>
+    </article>
+  </template>
 
   <script src="script.js"></script>
 </body>
