@@ -2,39 +2,34 @@ const links = [
   {
     title: '雨云',
     desc: '超低价vps 各种服务器',
-    category: '工具',
+    category: '服务器',
     url: 'https://www.rainyun.com/MTA2MjEyMg==_'
   },
   {
     title: '硅基流动',
     desc: '超低价格api接口，适合开发者和学生练习使用',
-    category: '工具',
+    category: 'api接口',
     url: 'https://cloud.siliconflow.cn/i/Zx0kuVtq'
   },
   {
     title: 'mcbbs',
     desc: '超低价vps 各种服务器',
-    category: '学习',
+    category: '服务器',
     url: 'https://mc.gfyidc.com/aff/JNDYVBKY'
   },
   {
-    title: '云服务器新用户包',
-    desc: '适合建站和练习部署，活动页会随时间变动。',
-    category: '工具',
-    url: 'https://example.com/your-aff-link-4'
+    title: '莱卡云',
+    desc: '超低价服务器，适合个人和小型企业使用',
+    category: '服务器',
+    url: 'https://www.lcayun.com/aff/OZKNRZPP'
   },
   {
-    title: '日用好物特惠专区',
-    desc: '汇总高频消费品，方便每天顺手领券下单。',
-    category: '电商',
-    url: 'https://example.com/your-aff-link-5'
+    title: '北少云',
+    desc: '这种VPS很适合用来挂龙虾（OpenClaw）',
+    category: '服务器',
+    url: 'https://www.beishaoidc.cn/aff/WTOKELHJ'
   },
-  {
-    title: '外语学习会员活动',
-    desc: '新账号注册福利较多，适合入门用户。',
-    category: '学习',
-    url: 'https://example.com/your-aff-link-6'
-  }
+ 
 ];
 
 const themeToggle = document.getElementById('themeToggle');
